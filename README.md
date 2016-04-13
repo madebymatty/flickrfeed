@@ -41,7 +41,7 @@ Create build files
 
   ```sh
 
-    gulp build
+  gulp build
 
   ```
 
