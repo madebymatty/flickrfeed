@@ -45,7 +45,7 @@ Create build files
 
   ```
 
-Clean build foler
+Clean build folder
 
   ```sh
 
