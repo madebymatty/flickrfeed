@@ -1,0 +1,26 @@
+
+<div class="row">
+  <div class="small-12 column">
+    <aside>
+      <p><a href="#/" class="btn"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a></p>
+    </aside>
+  </div>
+  <div class="small-12 column">
+    <article class="photo-item">
+      <h2 class="photo-item__title"><a href="{{ details.pic.link }}">{{ details.pic.title }}</a></h2>
+      <p><a href="https://www.flickr.com/people/{{ details.pic.author_id }}">Author: {{ details.pic.author }}</a> | Published {{ details.pic.published | date }}</p>
+      <div class="row">
+        <div class="small-12 medium-3 column">
+          <a href="{{ details.pic.link }}"><img data-ng-src="{{ details.pic.media }}" alt="{{ pic.title }}" class="photo-item__img"></a>
+        </div>
+        <div class="small-12 medium-9 column">
+          <div ng-bind-html="details.pic.description"></div>
+          <p class="tags">
+            <div ng-bind-html="details.pic.tags"></div>
+          </p>
+          <p><div google-plus></div> <div fb-like></div></p>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

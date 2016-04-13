@@ -1,0 +1,35 @@
+//PHOTO
+
+.photo-item {
+margin-bottom:20px;border: 1px solid #efeae2;padding:30px;
+
+  .photo-item__title {
+    a {
+      font: {
+        size: 24px;
+        family: 'Montserrat';
+        weight: 400;
+      }
+      color:$heading-color;
+    }
+
+  }
+
+  .photo-item__img {
+        width: 100%;
+        margin-bottom:20px;
+  }
+
+  .photo-item__tags {
+    list-style:none;
+    margin:0;
+    padding:0;
+    li {
+      display:inline;
+    }
+  }
+}
+
+@media #{$small-only} {
+
+}

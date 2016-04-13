@@ -1,0 +1,30 @@
+{
+  "name": "Matt Woods",
+  "version": "0.0.1",
+  "description": "AngularJS Demo",
+  "authors": [
+    "Matt Woods"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/madebymatty",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.2.24"
+  },
+  "dependencies": {
+    "angular": "~1.2.29",
+    "angular-route": "~1.2.29",
+    "angular-animate": "~1.2.29",
+    "angular-sanitize": "~1.2.29",
+    "toastr": "~2.0.1",
+    "angulike": "~1.2.0",
+    "foundation": "https://github.com/zurb/foundation-sites.git#~5.5.3",
+    "jquery": "~2.1.0"
+  }
+}

@@ -1,0 +1,46 @@
+
+<aside class="search-box">
+  <div class="row">
+    <div class="small-12 medium-6 column">
+        <label>Search tags:</label> <input type="search" ng-model="search">
+    </div>
+    <div class="small-12 medium-6 column">
+          <label>Filter photos:</label> <input type="search" ng-model="new">
+    </div>
+  </div>
+</aside>
+
+<article class="photo-listing">
+  <div class="row">
+    <div ng-repeat="pic in db.pics | filter:search | filter:new" class="small-12 column" >
+      <article class="photo-item">
+        <div class="row">
+          <div class="small-12 medium-3 column">
+            <a href="/#/details/{{ pic.photoid }}/{{ pic.tagid }}"><img data-ng-src="{{ pic.media }}" alt="{{ pic.title }}" class="photo-item__img"></a>
+          </div>
+          <div class="small-12 medium-9 column">
+
+            <h2 class="photo-item__title"><a href="/#/details/{{ pic.photoid }}/{{ pic.tagid }}">{{ pic.title }}</a></h2>
+
+            <div class="row">
+              <div class="small-12 medium-12 column show-for-medium-up">
+                <p><a href="https://www.flickr.com/people/{{ pic.author_id }}">Author: {{ pic.author }}</a> Published {{ pic.published | date }} <a href="{{ pic.link }}">View on Flickr</a></p>
+              </div>
+            </div>
+
+            <div class="row show-for-small-only">
+              <div class="small-12 medium-12 column">
+                <p>Published {{ pic.published | date }}</p>
+              </div>
+              <div class="small-12 medium-12 column">
+                <a href="https://www.flickr.com/people/{{ pic.author_id }}">Author: {{ pic.author }}</a> <a href="{{ pic.link }}">View on Flickr</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</article>

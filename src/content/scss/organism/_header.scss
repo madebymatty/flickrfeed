@@ -1,0 +1,41 @@
+//HEADER
+
+.header {
+
+  background: $background-color;
+  color: $heading-color;
+
+  .header__title {
+
+    padding: 20px 0 20px 0;
+    text-align:center;
+    a {
+        color: $heading-color;
+      font: {
+        size: 28px;
+        family: 'Montserrat';
+        weight: 700;
+      }
+
+      &:hover {
+        color: lighten($heading-color, 10%);
+        text-decoration:none;
+      }
+    }
+
+  }
+}
+
+@media #{$medium-up} {
+  .header {
+
+    .header__title {
+      text-align:left;
+      a {
+        font: {
+          size: 36px;
+        }
+      }
+    }
+  }
+}

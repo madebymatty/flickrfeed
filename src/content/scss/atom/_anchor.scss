@@ -1,0 +1,37 @@
+//ANCHOR
+a
+{
+  color: $link-color;
+  text-decoration: none;
+  //border-bottom: 1px solid $turquoise;
+  transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+  font: {
+    size: 14px;
+    weight: 400;
+    family: 'Open Sans';
+  }
+  &:hover {
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+    text-decoration: underline;
+    color: $link-color;
+  }
+}
+
+.link--right {
+  text-align:right;
+}
+
+.link--left {
+  text-align:left;
+}
+
+.link--center {
+  text-align:center;
+}
+
+.link--noborder {
+  border: 0px;
+  &:hover {
+    border: 0px;
+  }
+}

@@ -1,0 +1,32 @@
+//SASS DECLARATION
+@charset 'UTF-8';
+
+// UTILITIES
+@import "./src/content/scss/utility/colors.scss";
+@import "./src/content/scss/utility/settings.scss";
+@import "./src/content/scss/utility/fonts.scss";
+@import "./src/content/scss/font-awesome/font-awesome";
+@import "./bower_components/foundation/scss/foundation.scss";
+//@import "./resources/src/content/scss/utility/mixin.scss";
+//@import "./resources/src/content/scss/utility/animations.scss";
+
+// ATOMIC DESIGN METHODOLOGY
+
+// ATOMS
+@import "./src/content/scss/atom/anchor.scss";
+@import "./src/content/scss/atom/button.scss";
+@import "./src/content/scss/atom/text.scss";
+@import "./src/content/scss/atom/heading.scss";
+
+// MOLECULES
+@import "./src/content/scss/molecule/logo.scss";
+@import "./src/content/scss/molecule/search-box.scss";
+@import "./src/content/scss/molecule/photo-listing.scss";
+@import "./src/content/scss/molecule/photo.scss";
+
+// ORGANISMS
+@import "./src/content/scss/organism/header.scss";
+@import "./src/content/scss/organism/footer.scss";
+
+// TEMPLATES
+@import "./src/content/scss/template/home.scss";

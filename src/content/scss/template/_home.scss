@@ -1,0 +1,32 @@
+// HOME TEMPLATE
+
+body {
+  background: $background;
+}
+
+.page-splash {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  z-index: 9999;
+  text-align: center;
+  padding: 100px 30px 0 30px;
+  font: {
+    size: 34px;
+    family: 'Montserrat';
+    weight: 700;
+  }
+}
+
+@media #{$medium-up} {
+  .page-splash {
+    padding: 200px 0px 0 0px;
+    font: {
+      size: 44px;
+      family: 'Montserrat';
+      weight: 700;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//BUTTON
+.btn {
+  background: $link-color;
+  color: $white;
+  display:block;
+  padding:20px 20px 20px 20px;
+  margin:10px 0 20px 0;
+  float: right;
+  font: {
+    size: 16px;
+    weight: 700;
+    family: 'Open Sans';
+  }
+  .fa {
+    padding-right: 5px;
+    font: {
+      size:15px;
+    }
+  }
+  border:0px;
+  transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+
+  &:hover, &:focus{
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
+    background: lighten($link-color, 10%);
+    color: $white;
+    border:0px;
+    text-decoration:none;
+  }
+
+}
+
+@media #{$medium-up} {
+  .btn {
+
+  }
+}
