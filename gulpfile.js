@@ -18,7 +18,6 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
-var jscs = require('gulp-jscs');
 var plato = require('plato');
 var merge = require('merge-stream');
 var angularTemplatecache = require('gulp-angular-templatecache');
