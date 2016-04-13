@@ -10,3 +10,45 @@ A test project using AngularJS version 1.2.29 to pull in a public Flickr feed.
   1. Bower
   1. Sass
   1. NPM / NodeJS
+
+## Running the project
+
+Install node packages
+
+  ```sh
+
+  npm install
+
+  ```
+
+Install bower components
+
+  ```sh
+
+  bower install
+
+  ```
+
+Compile CSS/Sass files
+
+  ```sh
+
+  gulp styles
+
+  ```
+
+Create build files
+
+    ```sh
+
+    gulp build
+
+    ```
+
+Clean build foler
+
+  ```sh
+
+  gulp clean
+
+  ```
