@@ -39,11 +39,11 @@ Compile CSS/Sass files
 
 Create build files
 
-    ```sh
+  ```sh
 
     gulp build
 
-    ```
+  ```
 
 Clean build foler
 
